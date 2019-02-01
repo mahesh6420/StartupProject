@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DailyStandup.Common\DailyStandup.Common.csproj" />
-    <ProjectReference Include="..\DailyStandup.Data\DailyStandup.Data.csproj" />
-    <ProjectReference Include="..\DailyStandup.Entities\DailyStandup.Entities.csproj" />
+    <ProjectReference Include="..\StartupProject.Common\StartupProject.Common.csproj" />
+    <ProjectReference Include="..\StartupProject.Data\StartupProject.Data.csproj" />
+    <ProjectReference Include="..\StartupProject.Entities\StartupProject.Entities.csproj" />
   </ItemGroup>
 
 </Project>

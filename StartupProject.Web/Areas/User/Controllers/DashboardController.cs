@@ -1,4 +1,4 @@
-﻿using DailyStandup.Infrastructure.ApplicationController;
+﻿using StartupProject.Infrastructure.ApplicationController;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Web.Areas.User.Controllers
+namespace StartupProject.Web.Areas.User.Controllers
 {
     [Area("User")]
     [Authorize]

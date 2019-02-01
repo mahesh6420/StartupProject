@@ -1,8 +1,8 @@
-﻿using DailyStandup.Common.Enums;
-using DailyStandup.Entities.Models;
-using DailyStandup.Infrastructure.Interfaces.IRepository;
-using DailyStandup.Web.Data;
+﻿using StartupProject.Entities.Models;
+using StartupProject.Infrastructure.Interfaces.IRepository;
+using StartupProject.Web.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using StartupProject.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Infrastructure.Repository
+namespace StartupProject.Infrastructure.Repository
 {
     public class BaseRepository : IBaseRepository
     {

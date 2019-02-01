@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Web.Models.AccountViewModels
+namespace StartupProject.Web.Models.AccountViewModels
 {
     public class LoginWithRecoveryCodeViewModel
     {

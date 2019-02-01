@@ -6,8 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Areas\User\Views\Shared\Components\Obstacle\ObstacleList.cshtml" />
-    <Content Remove="Areas\User\Views\Shared\Components\Work\WorkList.cshtml" />
+    <Compile Remove="Areas\User\Views\Shared\Components\Obstacle\**" />
+    <Compile Remove="Areas\User\Views\Shared\Components\Work\**" />
+    <Content Remove="Areas\User\Views\Shared\Components\Obstacle\**" />
+    <Content Remove="Areas\User\Views\Shared\Components\Work\**" />
+    <EmbeddedResource Remove="Areas\User\Views\Shared\Components\Obstacle\**" />
+    <EmbeddedResource Remove="Areas\User\Views\Shared\Components\Work\**" />
+    <None Remove="Areas\User\Views\Shared\Components\Obstacle\**" />
+    <None Remove="Areas\User\Views\Shared\Components\Work\**" />
   </ItemGroup>
 
 
@@ -24,15 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Areas\User\Views\Shared\Components\Obstacle\ObstacleList.cshtml" />
-    <None Include="Areas\User\Views\Shared\Components\Work\WorkList.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DailyStandup.Common\DailyStandup.Common.csproj" />
-    <ProjectReference Include="..\DailyStandup.Data\DailyStandup.Data.csproj" />
-    <ProjectReference Include="..\DailyStandup.Entities\DailyStandup.Entities.csproj" />
-    <ProjectReference Include="..\DailyStandup.Infrastructure\DailyStandup.Infrastructure.csproj" />
+    <ProjectReference Include="..\StartupProject.Common\StartupProject.Common.csproj" />
+    <ProjectReference Include="..\StartupProject.Data\StartupProject.Data.csproj" />
+    <ProjectReference Include="..\StartupProject.Entities\StartupProject.Entities.csproj" />
+    <ProjectReference Include="..\StartupProject.Infrastructure\StartupProject.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -123,9 +124,6 @@
     <Content Update="Areas\User\Views\Manage\_ViewStart.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Areas\User\Views\Shared\Components\Obstacle\ObstacleForm.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
     <Content Update="Areas\User\Views\Shared\Error.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
@@ -151,6 +149,12 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Areas\User\Views\_ViewStart.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\_ViewImports.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\_ViewStart.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

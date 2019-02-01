@@ -4,12 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using DailyStandup.Web.Models;
-using DailyStandup.Entities.Models.User;
-using DailyStandup.Entities.Models.Standup;
+using StartupProject.Entities.Models.User;
 using Microsoft.AspNetCore.Identity;
 
-namespace DailyStandup.Web.Data
+namespace StartupProject.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -26,6 +24,10 @@ namespace DailyStandup.Web.Data
             {
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
+
+            builder.Entity<ApplicationUser>().ToTable("ApplicationUser");
+            builder.Entity<ApplicationRole>().ToTable("ApplicationRole");
+            builder.Entity<UserRole>().ToTable("UserRole");
         }
     }
 }

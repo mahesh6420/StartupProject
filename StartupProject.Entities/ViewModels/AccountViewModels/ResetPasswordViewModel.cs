@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Entities.ViewModels.AccountViewModels
+namespace StartupProject.Entities.ViewModels.AccountViewModels
 {
     public class ResetPasswordViewModel
     {

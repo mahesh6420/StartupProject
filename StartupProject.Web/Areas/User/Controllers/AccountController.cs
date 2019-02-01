@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using DailyStandup.Common.Enums;
-using DailyStandup.Entities.Models;
-using DailyStandup.Entities.Models.User;
-using DailyStandup.Entities.ViewModels.AccountViewModels;
-using DailyStandup.Infrastructure.ApplicationController;
-using DailyStandup.Infrastructure.Extensions;
-using DailyStandup.Infrastructure.Interfaces;
-using DailyStandup.Web.Models.AccountViewModels;
+using StartupProject.Common.Enums;
+using StartupProject.Entities.Models.User;
+using StartupProject.Entities.Models;
+using StartupProject.Entities.ViewModels.AccountViewModels;
+using StartupProject.Infrastructure.ApplicationController;
+using StartupProject.Infrastructure.Extensions;
+using StartupProject.Infrastructure.Interfaces;
+using StartupProject.Web.Models.AccountViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -21,7 +21,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace DailyStandup.Web.Controllers
+namespace StartupProject.Web.Controllers
 {
     [Area("User")]
     [Authorize]

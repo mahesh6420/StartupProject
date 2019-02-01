@@ -8,21 +8,21 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DailyStandup.Web.Data;
-using DailyStandup.Web.Models;
-using DailyStandup.Entities.Models.User;
-using DailyStandup.Infrastructure.Interfaces;
-using DailyStandup.Infrastructure.Services;
-using DailyStandup.Infrastructure.Interfaces.IServices;
-using DailyStandup.Infrastructure.Repository;
-using DailyStandup.Infrastructure.Interfaces.IRepository;
+using StartupProject.Web.Data;
+using StartupProject.Web.Models;
+using StartupProject.Entities.Models.User;
+using StartupProject.Infrastructure.Interfaces;
+using StartupProject.Infrastructure.Services;
+using StartupProject.Infrastructure.Interfaces.IServices;
+using StartupProject.Infrastructure.Repository;
+using StartupProject.Infrastructure.Interfaces.IRepository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authentication;
 
-namespace DailyStandup.Web
+namespace StartupProject.Web
 {
     public class Startup
     {
@@ -95,15 +95,15 @@ namespace DailyStandup.Web
             {
                 routes.MapRoute(
                     name: "AdminRoute",
-                    template: "{area=user}/{controller=Dashboard}/{action=Index}");
+                    template: "{user}/{controller=Dashboard}/{action=Index}/{id?}");
 
                 routes.MapRoute(
-                    name: "LoginRoute",
-                    template: "{area=user}/{controller=Account}/{action=Login}");
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
 
-                //routes.MapRoute(
-                //    name: "default",
-                //    template: "{area:exists}/{controller=Account}/{action=Login}/{id?}");
+                routes.MapRoute(
+                   name: "LoginRoute",
+                   template: "{area=user}/{controller=Account}/{action=Login}");
 
             });
         }

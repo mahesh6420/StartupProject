@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Infrastructure.ApplicationController
+namespace StartupProject.Infrastructure.ApplicationController
 {
     public class BaseController : Controller
     {

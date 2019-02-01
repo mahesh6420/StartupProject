@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using DailyStandup.Entities.Models.User;
-using DailyStandup.Entities.ViewModels.ManageViewModels;
-using DailyStandup.Infrastructure.Extensions;
-using DailyStandup.Infrastructure.Interfaces;
+using StartupProject.Entities.Models.User;
+using StartupProject.Entities.ViewModels.ManageViewModels;
+using StartupProject.Infrastructure.Extensions;
+using StartupProject.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace DailyStandup.Web.Controllers
+namespace StartupProject.Web.Controllers
 {
     [Area("User")]
     [Authorize]

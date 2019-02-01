@@ -1,6 +1,6 @@
 using System;
 
-namespace DailyStandup.Entities.ViewModels
+namespace StartupProject.Entities.ViewModels
 {
     public class ErrorViewModel
     {

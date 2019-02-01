@@ -6,7 +6,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Entities.Models.User
+namespace StartupProject.Entities.Models.User
 {
     public class UserRole : IdentityUserRole<string>
     {

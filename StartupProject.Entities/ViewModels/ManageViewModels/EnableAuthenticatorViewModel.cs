@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace DailyStandup.Entities.ViewModels.ManageViewModels
+namespace StartupProject.Entities.ViewModels.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

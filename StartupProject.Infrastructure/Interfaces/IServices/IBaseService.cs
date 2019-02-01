@@ -1,11 +1,11 @@
-﻿using DailyStandup.Entities.Models;
+﻿using StartupProject.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Infrastructure.Interfaces.IServices
+namespace StartupProject.Infrastructure.Interfaces.IServices
 {
     public interface IBaseService<TModel, TViewModel, TKey> where TModel : class where TViewModel: class
     {

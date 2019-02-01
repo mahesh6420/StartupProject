@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
-using DailyStandup.Entities.Models.Standup;
 using Microsoft.AspNetCore.Identity;
 
-namespace DailyStandup.Entities.Models.User
+namespace StartupProject.Entities.Models.User
 {
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
@@ -24,6 +23,5 @@ namespace DailyStandup.Entities.Models.User
         }
 
         public IEnumerable<UserRole> UserRole { get; set; }
-        public IEnumerable<UserProject> Projects { get; set; }
     }
 }

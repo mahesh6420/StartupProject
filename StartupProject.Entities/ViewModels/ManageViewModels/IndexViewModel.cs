@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DailyStandup.Entities.ViewModels.ManageViewModels
+namespace StartupProject.Entities.ViewModels.ManageViewModels
 {
     public class IndexViewModel
     {
