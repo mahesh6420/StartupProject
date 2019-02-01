@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authentication;
+using StartupProject.Infrastructure.Extensions;
 
 namespace StartupProject.Web
 {
@@ -91,21 +92,7 @@ namespace StartupProject.Web
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseCookiePolicy();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "AdminRoute",
-                    template: "{user}/{controller=Dashboard}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                   name: "LoginRoute",
-                   template: "{area=user}/{controller=Account}/{action=Login}");
-
-            });
+            app.UseMvcWithCustomizedRoute();
         }
     }
 }
